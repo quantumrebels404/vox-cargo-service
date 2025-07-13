@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:shipmentdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+#  datasource:
+#    #url: jdbc:h2:mem:test_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+#    # url: jdbc:mysql://localhost:3306/user_db
+#    url: jdbc:postgresql://localhost:5454/voxcargo
+#    username: postgres
+#    password: hospital
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
